@@ -1,0 +1,340 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:400,700');
+
+$josefin: 'Josefin Sans', sans-serif;
+$Aleo: 'Aleo', serif;
+
+.ba-container {
+    margin-left: 330px;
+    width: 1110px;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif, bold;
+    letter-spacing: 0.1em;
+    font-size: 48px;
+    margin-left: 400px;
+    margin-bottom: 15px;
+}
+
+.header {
+    background-image: url("images/Image.png");
+    background-size: cover;
+    padding-top: 260px;
+    padding-bottom: 140px;
+    .header_text {
+        font-family: 'Josefin Sans', sans-serif, regular;
+        font-size: 22px;
+        letter-spacing: 0.31em;
+        color: white;
+        margin-left: 393px;
+        margin-bottom: 50px;
+    }
+    &_form {
+        height: 60px;
+        width: 650px;
+        border: solid white 1px;
+        background-color: white;
+        display: flex;
+        margin-left: 230px;
+        margin-bottom: 110px;
+        .search_row {
+            border: none;
+            width: 500px;
+            text-align: center;
+            &::placeholder {
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 14px;
+                letter-spacing: 0.2em;
+            }
+        }
+        .search_button {
+            background-color: rgb(84,116,253);
+            width: 148px;
+            height: 58px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            &-text {
+                background-color: rgb(84,116,253);
+                height: 58px;
+                color: white;
+                border: none;
+                font-family: 'Aleo', serif;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .scroll {
+        font-family: $josefin;
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        color: white;
+        margin-left: 505px;
+        margin-bottom: 13px;
+    }
+    .scroll_image {
+        margin-left: 545px;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.menu {
+    background-color: rgb(84,116,253);
+    height: 80px;
+    display: flex;
+    padding-top: 30px;
+    .logo_men_cont {
+        display: flex;
+    }
+    .menu_logo {
+        display: inline-block;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        margin-left: 0px;
+    }
+    .menu-list {
+        display: flex;
+        margin-left: 440px;
+        .menu-item {
+        font-family: $Aleo;
+        color: white;
+        list-style-type: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-right: 30px;
+        &:last-child {
+            margin: 0;
+        }
+        }
+    }
+}
+
+.thirdblock {
+    background-image: url("images/Rectangle\ 7.png");
+    background-size: cover;
+    display: flex;
+    padding-bottom: 120px;
+    .ba-container {
+        display: flex;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        width: 540px;
+        &_bigtext {
+            font-family: $Aleo;
+            color: white;
+            font-size: 36px;
+            margin-top: 200px;
+            margin-bottom: 65px;
+        }
+        &_smalltext {
+            color: rgb(232,232,232);
+            font-family: $josefin, regular;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            line-height: 1.5;
+        }
+        .beforbutsvg {
+            // margin-bottom: 50px;
+        }
+        .butsvg {
+            text-transform: uppercase;
+            margin-top: 50px;
+        }
+    }
+    .image {
+        width: 540px;
+        margin-left: 30px;
+        .image_pict {
+            width: 350px;
+            height: 220px;
+        }
+        .first-pict {
+            margin-top: 120px;
+            margin-left: 70px;
+            margin-bottom: 5px;
+        }
+        .second-pict {
+            margin-left: 190px;
+        }
+    }
+}
+
+.fourthblock {
+    background-color: rgb(51,51,51);
+    height: 340px;
+    position: relative;
+    .halfcircle {
+        position: absolute;
+        top: 45px;
+        left: 495px;
+        z-index: 0;
+    }
+    .icons {
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+    
+        .contwithimg {
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+            align-items: center;
+            z-index: 100;
+            .icon {
+                z-index: 100;
+            }
+            .icontext {
+                font-family: $Aleo;
+                font-size: 36px;
+                color: rgb(232,232,232);
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.sameblock {
+    // background-image: url("images/Rectangle\ 414.png");
+    background-size: cover;
+    // padding-left: 330px;
+    // padding-top: 230px;
+    // padding-bottom: 100px;
+    .standblock {
+        height: 370px;
+        width: 540px;
+        background-color: rgba(45,45,45, 0.8);
+        // opacity: ;
+        padding-top: 45px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+        &_country {
+            color: rgb(232,232,232);
+            font-family: $josefin;
+            font-size: 20px;
+            letter-spacing: 0.075em;
+            margin-bottom: 30px;
+        }
+        &_bigtext {
+            font-family: $josefin;
+            font-size: 20px;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        &_smalltext {
+            color: rgb(232,232,232);
+            font-family: $josefin;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.fifthblock {
+    padding-left: 330px;
+    padding-top: 230px;
+    padding-bottom: 100px;
+    background-image: url("images/Rectangle\ 414.png");
+}
+
+.sixblock {
+    background-image: url("images/Rectangle 4141.png");
+    background-size: cover;
+    padding-left: 900px;
+    padding-top: 230px;
+    padding-bottom: 100px;
+}
+
+.sevenblock {
+    background-image: url("images/Rectangle 4142.png");
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 200px;
+    .big-text {
+        color: white;
+        font-family: $Aleo;
+        font-size: 36px;
+        margin-bottom: 100px;
+        margin-left: 725px;
+    }
+    .last_block {
+        display: flex;
+        width: 1110px;
+        height: 290px;
+        margin-left: 330px;
+        background-color: rgb(51,51,51);
+        img {
+            // background-image: url("images/Rectangle 41441.png");
+            background-size: cover;
+            height: 290px;
+        }
+        .text_in_last_block {
+            display: flex;
+            flex-direction: column;
+            padding-left: 55px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-right: 50px;
+            .name {
+                font-family: $josefin;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+                color: white;
+            }
+            .smalltext_lasttext {
+                font-family: $josefin;
+                font-size: 16px;
+                color: white;
+                line-height: 1.5;
+                span {
+                    color: rgb(80,107,226);
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    padding-top: 120px;
+    background-color: rgb(35,35,35);
+    text-align: center;
+    padding-bottom: 25px;
+    // align-items: center;
+    .logo {
+        margin: 0;
+    }
+    .header_text {
+        color: white;
+        margin-bottom: 30px;
+    }
+    .snicon {
+        display: flex;
+        justify-content: space-between;
+        width: 170px;
+        margin-left: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;     
+    }
+}
+
+
