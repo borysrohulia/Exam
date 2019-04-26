@@ -122,6 +122,9 @@
       font-size: 14px;
       text-transform: uppercase;
       margin-right: 30px; }
+      .menu .menu-list .menu-item:hover {
+        opacity: 0.5;
+        text-decoration: underline; }
       .menu .menu-list .menu-item:last-child {
         margin: 0; }
 
@@ -317,8 +320,4 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 170px;
-    margin-left: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0; }
+    margin-left: 45%; }
